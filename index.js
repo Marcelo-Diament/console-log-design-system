@@ -1,4 +1,4 @@
-module.exports = function makeComment(title, comments = undefined, status = 'default', size = "md", type = 'main') {
+function makeComment(title, comments = [], status = 'default', size = "md", type = 'main') {
   let consoleDefaultParams = {
     size: {
       xxs: {
@@ -126,10 +126,10 @@ module.exports = function makeComment(title, comments = undefined, status = 'def
     }
   };
 
-  if (comments !== undefined && comments === comments.toString()) {
-    oldComments = comments;
+  if (comments !== undefined && comments !== [] && comments === comments.toString()) {
+    let oldComments = comments;
     comments = [];
-    comments.push(oldComments)
+    comments.push(oldComments);
   }
 
   switch (type) {
@@ -139,40 +139,40 @@ module.exports = function makeComment(title, comments = undefined, status = 'def
         `${consoleDefaultParams.size[size]['secondary']}`,
         `${consoleDefaultParams.size[size][type] + consoleDefaultParams.color[status][type]}`);
       if (comments !== undefined) {
-        for (comment of comments) {
+        for (let comment of comments) {
           console.log(`%c${comment}`, `${consoleDefaultParams.size[size]['secondary'] + consoleDefaultParams.color[status]['secondary']}`);
         }
       }
       console.groupEnd();
-      return;
+      break;
     case 'badge':
       console.groupCollapsed(`%c${status}%c %c${title}`,
         `${consoleDefaultParams.size['xxs']['badge'] + consoleDefaultParams.color['log']['main']}`,
         `${consoleDefaultParams.size[size]['secondary']}`,
         `${consoleDefaultParams.size[size][type] + consoleDefaultParams.color[status][type]}`);
       if (comments !== undefined) {
-        for (comment of comments) {
+        for (let comment of comments) {
           console.log(`%c${comment}`, `${consoleDefaultParams.size[size]['secondary'] + consoleDefaultParams.color[status]['secondary']}`);
         }
       }
       console.groupEnd();
-      return;
+      break;
     case 'badgeInverted':
       console.groupCollapsed(`%c${status}%c %c${title}`,
         `${consoleDefaultParams.size['xxs']['badge'] + consoleDefaultParams.color['log']['main']}`,
         `${consoleDefaultParams.size[size]['secondary']}`,
         `${consoleDefaultParams.size[size][type] + consoleDefaultParams.color[status][type]}`);
       if (comments !== undefined) {
-        for (comment of comments) {
+        for (let comment of comments) {
           console.log(`%c${comment}`, `${consoleDefaultParams.size[size]['secondary'] + consoleDefaultParams.color[status]['secondary']}`);
         }
       }
       console.groupEnd();
-      return;
+      break;
     case 'secondary':
     default:
       if (comments !== undefined) {
-        for (comment of comments) {
+        for (let comment of comments) {
           console.log(`%c${status}%c %c${title}%c %c${comment}`,
             `${consoleDefaultParams.size['xxs']['badge'] + consoleDefaultParams.color['log']['main']}`,
             `${consoleDefaultParams.size[size]['secondary']}`,
@@ -180,7 +180,8 @@ module.exports = function makeComment(title, comments = undefined, status = 'def
             `${consoleDefaultParams.size[size]['secondary']}`,
             `${consoleDefaultParams.size[size]['secondary'] + consoleDefaultParams.color[status]['secondary']}`);
         }
-        return;
+        break;
       }
   }
 }
+export default makeComment;
