@@ -1,4 +1,4 @@
-!(console-log-design-system)[https://djament.com.br/img/preview.png]
+![console-log-design-system](https://djament.com.br/img/preview.png)
 
 # console.log design system
 
