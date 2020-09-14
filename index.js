@@ -1,4 +1,4 @@
-module.exports = function (title, comments = undefined, status = 'default', size = "md", type = 'main') {
+module.exports = function makeComment(title, comments = undefined, status = 'default', size = "md", type = 'main') {
   let consoleDefaultParams = {
     size: {
       xxs: {
