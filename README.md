@@ -1,2 +1,45 @@
-# console-log-design-system
-A npm package to make your console messages more visual and well organized
+# console.log design system
+
+This package aims to make easier to create visual console messages (including groupCollapsed ones) as well as to create containers so messages will be more organized.
+
+This is the very first version of it. So, if you have any suggestions, feel free to get in touch!
+
+## consoleDefaultParams
+
+``` js
+/**
+ * @const consoleDefaultParams
+ * Detains all default template console style
+ * @property size - defines font-size, line-height as well as padding and margin according to its arguments passed (size and 'scenery')
+ * @property color - defines color, background-color as well as border style, according to its arguments ('status' and 'scenery')
+ * @property main - used in both size and color properties, defines its status as main
+ * @property secondary - used in both size and color properties, defines its status as secondary
+ * @property badge - used in both size and color properties, defines its status as badge
+ */
+```
+
+## makeComment()
+
+``` js
+/**
+ * @function makeComment
+ * Returns a comment to console with a custom style according to the passed arguments
+ * 
+ * @param {String} title - the title of the comment (set as groupCollapsed as default)
+ * @param {Array} comments - array with each comment to be consoled as a string element
+ * @param {String='default','bw','wb','fail','danger','alert','warning','info','success','successfull','important'} [status='defaul'] - status to be used to define its style (default|bw|wb|fail|danger|alert|warning|info|success|successfull|important)
+ * @param {String='xxs,'xs','sm','md','lg','xl','xxl'} [size='md'] - defines font properties (xxs|xs|sm|md|lg|xl|xxl)
+ * @param {String='main','secondary','badge','badgeInverted'} [type='main'] - defines wich style to be applied (main|secondary|badge|badgeInverted)
+ * 
+ * @requires consoleDefaultParams - that maps its styles template properties
+ */
+```
+
+**Marcelo Diament** | Front End Developer and Instructor
+
+[Github][Github] | [LinkedIn][LinkedIn]
+
+[//]: # 
+
+[Github]: <https://github.com/Marcelo-Diament>
+[LinkedIn]: <https://linkedin.com/in/marcelodiament>
