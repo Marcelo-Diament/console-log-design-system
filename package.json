@@ -1,6 +1,6 @@
 {
   "name": "console-log-design-system",
-  "version": "0.2.1",
+  "version": "0.2.3",
   "description": "a console.log design system tool",
   "main": "index.js",
   "scripts": {
