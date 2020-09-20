@@ -1,16 +1,30 @@
 {
   "name": "console-log-design-system",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "a console.log design system tool",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Marcelo-Diament/console-log-design-system.git"
+  },
   "keywords": [
     "console",
-    "log"
+    "log",
+    "consoleLog",
+    "designSystem",
+    "design",
+    "comments",
+    "consoleMessages",
+    "consoleTools",
+    "devTools"
   ],
-  "author": "Marcelo Diament",
+  "author": "Marcelo Diament (https://github.com/Marcelo-Diament/)",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Marcelo-Diament/console-log-design-system/issues"
+  },
   "homepage": "https://github.com/Marcelo-Diament/console-log-design-system"
 }
