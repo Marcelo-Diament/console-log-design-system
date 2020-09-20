@@ -10,18 +10,18 @@ This message was easily displayed by running `makeComment('makeComment()', ['Tes
 
 ![Simple Message](https://djament.com.br/img/demo-simple-example.png)
 
-* [Features][#features]
-  + [makeComment()][#makecomment]
-  + [makeCommentDemo()][#makecommentdemo]
-  + [Next Releases][#next-releases]
-* [Getting Started][#getting-started]
-  + [Dependencies][#dependencies]
-  + [Install Package][#install-package]
-  + [Import][#import]
-  + [Usage][#usage]
-* [Screenshots][#screenshots]
-* [More Details About makeComment()][#more-details-about-makecomment]
-* [Contact Me][#contact-me]
+* [Features](https://github.com/Marcelo-Diament/console-log-design-system#features)
+  + [makeComment()](https://github.com/Marcelo-Diament/console-log-design-system#makecomment)
+  + [makeCommentDemo()](https://github.com/Marcelo-Diament/console-log-design-system#makecommentdemo)
+  + [Next Releases](https://github.com/Marcelo-Diament/console-log-design-system#next-releases)
+* [Getting Started](https://github.com/Marcelo-Diament/console-log-design-system#getting-started)
+  + [Dependencies](https://github.com/Marcelo-Diament/console-log-design-system#dependencies)
+  + [Install Package](https://github.com/Marcelo-Diament/console-log-design-system#install-package)
+  + [Import](https://github.com/Marcelo-Diament/console-log-design-system#import)
+  + [Usage](https://github.com/Marcelo-Diament/console-log-design-system#usage)
+* [Screenshots](https://github.com/Marcelo-Diament/console-log-design-system#screenshots)
+* [More Details About makeComment()](https://github.com/Marcelo-Diament/console-log-design-system#more-details-about-makecomment)
+* [Contact Me](https://github.com/Marcelo-Diament/console-log-design-system#contact-me)
 
 ___
 
